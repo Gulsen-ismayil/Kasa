@@ -1,0 +1,31 @@
+body {
+  padding: 20px 40px;
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img{
+  width: 100px;
+  height: 30px;
+  padding-top: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  color: #FF6060;
+  text-decoration: underline;
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  font-size: 16px;
+}
+
+@media only screen and ( max-width:768px) {
+  .menu {
+    width: 30%;
+    font-size: 12px;
+  }
+}

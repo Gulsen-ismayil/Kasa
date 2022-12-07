@@ -1,5 +1,5 @@
-import mountains from'../assets/mountains.png'
-import '../styles/home.css'
+import mountains from'../../assets/image/mountains.png'
+import './Banner.css'
 
 function HomeImage(){
   return (

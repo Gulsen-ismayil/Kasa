@@ -1,4 +1,5 @@
-import gallerycart from'../assets/gallerycart.png'
+import gallerycart from'../../assets/image/gallerycart.png'
+import './Gallery.css'
 
 function CartGallery(){
   return (
