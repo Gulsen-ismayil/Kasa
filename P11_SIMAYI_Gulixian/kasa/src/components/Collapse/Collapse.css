@@ -1,0 +1,38 @@
+.collapseCard {
+  background-color: rgb(247, 244, 244);
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.collapseTitle {
+  background-color: #FF6060;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.collapseTitle p{
+  margin: 5px;
+}
+
+.dropdown {
+  width: 20px;
+  height: 18px;
+  margin: 5px 10px;
+}
+
+.collapseText {
+  font-size: 13px;
+  color: #FF6060;
+  padding: 15px 5px 10px;
+}
+
+@media only screen and ( max-width:768px) {
+  .collapse {
+    margin-bottom: 50px;
+  }
+
+}

@@ -1,10 +1,17 @@
-body {
-  padding: 20px 40px;
+body,html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.main {
+  padding: 20px;
 }
 /* Header */
 .header {
   display: flex;
   justify-content: space-between;
+  padding: 25px;
 }
 
 .logo img{
@@ -15,12 +22,19 @@ body {
 
 .menu {
   list-style-type: none;
-  color: #FF6060;
-  text-decoration: underline;
   display: flex;
   justify-content: space-between;
   width: 20%;
   font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #FF6060;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 @media only screen and ( max-width:768px) {

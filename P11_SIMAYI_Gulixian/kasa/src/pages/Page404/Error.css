@@ -1,0 +1,38 @@
+h1 {
+  margin: 0;
+}
+
+.error {
+  text-align: center;
+  color: #FF6060;
+  margin: 150px;
+}
+
+.errornumber{
+  font-size: 200px;
+}
+
+.errortext {
+  font-size: 20px;
+  margin: 50px 0 150px;
+}
+
+.errorlink {
+  text-decoration: underline;
+}
+
+@media only screen and ( max-width:768px) {
+  .error {
+    margin: 200px 100px;
+  }
+  
+  .errornumber {
+    font-size: 100px;
+  }
+
+  .errortext {
+    font-size: 15px;
+    margin: 20px 0 100px;
+  }
+
+}

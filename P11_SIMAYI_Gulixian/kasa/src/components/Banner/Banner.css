@@ -1,26 +1,31 @@
 
 /* BannerImage */
-.homeImage{
-  padding: 30px 0;
-}
-.homeImage img{
-  border-radius: 15px;
-  width: 100%;
+.Banner{
+  padding-bottom: 20px;
   position: relative;
 }
+.Banner img{
+  border-radius: 15px;
+  width: 100%;
+}
 
-.homeImage p {
-  position: absolute;
-  top: 155px;
-  left: 335px;
+.Banner p {
   font-weight: bold;
   color: white;
   font-size: 26px;
+  position: absolute;
+  left: 30%;
+  top: 20%;
 }
 
 
 @media only screen and ( max-width:768px) {
-  .homeImage p{
-    left: 125px;
+  .Banner img{
+    height: 10vh;
+  }
+  .Banner p{
+    left: 20%;
+    top: 30%;
+    font-size: 17px;
   }
 }
