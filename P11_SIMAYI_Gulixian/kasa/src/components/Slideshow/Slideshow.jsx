@@ -1,17 +1,11 @@
 
-import { useParams} from 'react-router-dom'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
-import data from'../../datas/data.json'
 import './Slideshow.css'
 
-function Slideshow(){
-const {id} = useParams()
+function Slideshow({carrouselData}){
 const [currentIndex,setCurrentIndex] = useState(0)
-const carrouselData = data.filter((element) => 
-                            id === element.id ?
-                            element.pictures : null)
 const carrouselPicture = carrouselData.map((pic) => pic.pictures)
 
 const goToPrev = () => {
