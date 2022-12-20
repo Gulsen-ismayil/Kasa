@@ -27,7 +27,14 @@
 .collapseText {
   font-size: 13px;
   color: #FF6060;
-  padding: 15px 5px 10px;
+  padding: 15px 15px;
+}
+
+.equipement {
+  list-style-type: none;
+  color: #FF6060;
+  font-size: 14px;
+  padding: 0px 15px 15px;
 }
 
 @media only screen and ( max-width:768px) {

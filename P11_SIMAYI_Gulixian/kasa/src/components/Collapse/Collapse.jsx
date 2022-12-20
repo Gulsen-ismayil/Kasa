@@ -21,34 +21,20 @@ function Collapse({type,text,list}){
 <div className='collapseCard' id={type} >
         <div className="collapseTitle" onClick={() => setIsClose(true)} >
             <p >{type}</p>
-            <FontAwesomeIcon className='dropdown' 
-                              icon={faChevronUp}
-            />
+            <FontAwesomeIcon className='dropdown'icon={faChevronUp} />
         </div>
-        {/*  c'est à partir ici je pense qu'il y un problème. parce que je vois sur navigateur seulement un seul élément. 
-        sois le text de description, sois la list d'équipement.je n'arrive pas avoir les deux en même temps.  */}
-        
-        {/* solution avec condition */}
-        {{text} !== '' ?
-          <div className='collapseText'>{text}</div>
-          : null}
-         { list.map((li)=>
-          <ul>
-            <li>{li}</li>
-          </ul>)}
-
-        {/* solution pas de condition */}
-
-         {/* <div className='collapseText'>{text}</div>
-         { list.map((li)=>
-          <ul>
-            <li>{li}</li>
-          </ul>)} */}
-
-        
-            
-    </div>
-  )
+      
+        {text ?
+          (<div className='collapseText'>{text}</div>)
+          :
+          (<ul className='equipement' >
+          {list.map((li,index) =>
+            <li className='listEquipement' >{li}</li>
+         )}
+          </ul>)
+        }     
+</div>
+   )
 }
 
 export default Collapse

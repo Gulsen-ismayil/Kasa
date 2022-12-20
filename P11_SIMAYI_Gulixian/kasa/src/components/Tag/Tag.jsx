@@ -1,10 +1,12 @@
 import './Tag.css'
 
-function Tag(){
+function Tag({tag}){
   return (
-    <div>
-      <p>tag</p>
-    </div>
+    <ul className='tagBloc' >
+        {tag.map((tg,index) =>
+        <li key={index} className='tag'>{tg}</li>
+        )}
+    </ul>
   )
 }
 
