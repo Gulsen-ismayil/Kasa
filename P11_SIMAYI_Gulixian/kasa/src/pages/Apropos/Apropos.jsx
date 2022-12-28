@@ -24,7 +24,9 @@ const aproposData = [
 function Apropos(){
   return (
     <div className='apropos' >
-        <Banner img={aproposBanner} text=''/>
+        <div className='aproposBanner' >
+            <Banner img={aproposBanner} text=''/>
+        </div>
         <div className='aproposCollapse' >
             { aproposData.map((apropos,index) => 
               <Collapse key={index} type={apropos.title} text={apropos.text} />

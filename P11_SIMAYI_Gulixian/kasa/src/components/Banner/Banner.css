@@ -16,17 +16,20 @@
   font-size: 50px;
   position: absolute;
   left: 30%;
-  top: 30%;
+  top: 23%;
 }
 
+@media only screen and ( max-width:768px) {
+
+}
 
 @media only screen and ( max-width:768px) {
   .Banner img{
     height: 10vh;
   }
   .Banner p{
-    left: 20%;
-    top: 30%;
-    font-size: 17px;
+    left: 15%;
+    top: 19%;
+    font-size: 20px;
   }
 }

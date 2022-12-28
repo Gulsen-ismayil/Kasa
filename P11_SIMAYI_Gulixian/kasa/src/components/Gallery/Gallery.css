@@ -13,14 +13,10 @@
 .galleryCart{
   position: relative;
   width: 25vw;
-  /* max-height: 25vh; */
-  
 }
 
 .gallerycart-img{
   width: 100%;
-  /* height: 100%; */
-  /* width: 25vw; */
   height: 35vh;
   object-fit: cover;
   border-radius: 5px;
@@ -48,7 +44,7 @@
 }
 
 .galleryCart p{
-  top: 180px;
+  bottom: 4%;
 }
 
 .gallerycart-img{

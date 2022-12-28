@@ -2,18 +2,17 @@ body,html {
   margin: 0;
   padding: 0;
   height: 100vh;
-  position: relative;
 }
 
 .main {
-  padding: 20px;
-  /* position: relative; */
+  padding: 20px 100px;
 }
+
 /* Header */
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 25px;
+  padding: 25px 100px;
 }
 
 .logo img{
@@ -40,8 +39,22 @@ a:hover {
 }
 
 @media only screen and ( max-width:768px) {
+  .main {
+    padding: 20px;
+  }
+
+  .header {
+    padding: 25px;
+  }
+  .logo img{
+    width: 130px;
+    height: 45px;
+  }
+  
   .menu {
-    width: 30%;
+    width: 35%;
     font-size: 12px;
+    align-items: center;
+    font-size: 14px;
   }
 }

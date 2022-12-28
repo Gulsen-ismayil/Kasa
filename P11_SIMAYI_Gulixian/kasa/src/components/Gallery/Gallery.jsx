@@ -7,6 +7,10 @@ import './Gallery.css'
 function Gallery(){
   // let [locations,setLocations] = useState([])
   // useEffect(() => {
+// let locationsData = data.filter(()=>{})
+// if(!locationsData){
+// setLocations(locationData)
+// }else{ <Error /> }
 // utiliser setLOcations pour populer 
 // chercher comment populer un tablequ en ce ba/ how to populate an array from json file
   // },[])

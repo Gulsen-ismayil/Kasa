@@ -10,4 +10,5 @@ input[type="radio"] {
 .allStar {
   display: flex;
   align-items: center;
+  padding: 20px 0;
 }
