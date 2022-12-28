@@ -12,7 +12,7 @@ function Rating(){
           <div key={index}>
               <FontAwesomeIcon 
                 className='star' 
-                color={'#e4e5e9'} 
+                // color={'#e4e5e9'} 
                 icon={faStar} />
           </div>
           )
