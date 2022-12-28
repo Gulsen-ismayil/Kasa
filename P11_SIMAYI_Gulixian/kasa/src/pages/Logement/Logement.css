@@ -64,6 +64,11 @@
     flex-direction: row-reverse;
     width: 90%;
     justify-content: space-between;
+    margin: 0 15px;
+  }
+
+  .tag-title-location{
+    margin: 15px 15px 0;
   }
 
   .apropos-collapse{
