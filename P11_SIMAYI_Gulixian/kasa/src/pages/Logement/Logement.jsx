@@ -8,38 +8,38 @@ import './Logement.css'
 
 function Logement(){
   const {id} = useParams()
-  const carrouselData = data.filter((element) => 
+  const logementData = data.filter((element) => 
                             id === element.id ?
                             element.pictures : null)
 
   return (
     <div className='apropos-container'>
         <div className='slideshow' >
-            <Slideshow carrouselData={carrouselData}/>
+            <Slideshow logementData={logementData}/>
         </div>
         <div className='apropos-info' >
             <div className='tag-title-location' >
                   <div className='title-location'>
-                        <p>{carrouselData[0].title}</p>
-                        <p>{carrouselData[0].location}</p>
+                        <p>{logementData[0].title}</p>
+                        <p>{logementData[0].location}</p>
                   </div>
-                  <Tag tag={carrouselData[0].tags}/>
+                  <Tag tag={logementData[0].tags}/>
             </div>
             <div className='name-img-star'>
                   <div className="name-img">
-                        <p >{carrouselData[0].host.name}</p>
-                        <img src={carrouselData[0].host.picture} 
-                              alt={carrouselData[0].host.name} />
+                        <p >{logementData[0].host.name}</p>
+                        <img src={logementData[0].host.picture} 
+                              alt={logementData[0].host.name} />
                   </div>
-                  <Rating />
+                  <Rating star={logementData[0].rating}/>
             </div>
         </div>
         <div className='apropos-collapse'>
               <div className='apropos-collapse-title' >
-                  <Collapse type='Description' text={carrouselData[0].description}/>
+                  <Collapse type='Description' text={logementData[0].description}/>
               </div>
               <div className='apropos-collapse-title' >
-                  <Collapse type='Equipements' list={carrouselData[0].equipments}/>
+                  <Collapse type='Equipements' list={logementData[0].equipments}/>
               </div>
         </div>
     </div>

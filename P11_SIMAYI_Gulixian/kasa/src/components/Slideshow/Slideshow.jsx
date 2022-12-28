@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import './Slideshow.css'
 
-function Slideshow({carrouselData}){
+function Slideshow({logementData}){
 const [currentIndex,setCurrentIndex] = useState(0)
-const carrouselPicture = carrouselData.map((pic) => pic.pictures)
+const carrouselPicture = logementData.map((pic) => pic.pictures)
 
 const goToPrev = () => {
   const isFirstPic = currentIndex === 0
