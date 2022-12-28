@@ -28,7 +28,7 @@ function Collapse({type,text,list}){
           :
           (<ul className='equipement' >
           {list.map((li,index) =>
-            <li className='listEquipement' >{li}</li>
+            <li key={index} className='listEquipement' >{li}</li>
          )}
           </ul>)
         }     
