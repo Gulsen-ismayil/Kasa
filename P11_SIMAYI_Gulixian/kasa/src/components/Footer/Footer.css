@@ -1,8 +1,6 @@
 
 /* footer */
-.main {
-  position: relative;
-}
+
 .footer{
   background-color: black;
   width: 100%;
@@ -10,8 +8,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  position: absolute;
-  bottom: 0;
 }
 
 .footerlogo{
@@ -25,3 +21,10 @@
   height: 15px;
   margin: auto;
 }
+
+/* @media only screen and ( max-width:768px) {
+  .footer {
+    position: absolute;
+  }
+
+} */

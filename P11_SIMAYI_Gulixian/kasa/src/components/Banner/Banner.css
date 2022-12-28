@@ -2,20 +2,21 @@
 /* BannerImage */
 .Banner{
   padding-bottom: 20px;
-  position: relative;
 }
 .Banner img{
   border-radius: 15px;
   width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .Banner p {
   font-weight: bold;
   color: white;
-  font-size: 26px;
+  font-size: 50px;
   position: absolute;
   left: 30%;
-  top: 20%;
+  top: 30%;
 }
 
 

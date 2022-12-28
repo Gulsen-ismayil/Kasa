@@ -13,25 +13,31 @@ function Logement(){
                             element.pictures : null)
 
   return (
-    <div>
+    <div className='apropos-info'>
         <Slideshow carrouselData={carrouselData}/>
         <div className='name-title-location' >
-            <div className='title-location'>
-                  <p>{carrouselData[0].title}</p>
-                  <p>{carrouselData[0].location}</p>
-            </div>
-            <div className="name-img">
-                  <p >{carrouselData[0].host.name}</p>
-                  <img src={carrouselData[0].host.picture} 
-                       alt={carrouselData[0].host.name} />
-            </div>
+              <div className='title-location'>
+                    <p>{carrouselData[0].title}</p>
+                    <p>{carrouselData[0].location}</p>
+              </div>
+              <div className="name-img">
+                    <p >{carrouselData[0].host.name}</p>
+                    <img src={carrouselData[0].host.picture} 
+                        alt={carrouselData[0].host.name} />
+              </div>
         </div>
         <div className='tag-star'>
-            <Tag tag={carrouselData[0].tags}/>
-            <Rating />
+              <Tag tag={carrouselData[0].tags}/>
+              <Rating />
         </div>
-        <Collapse type='Description' text={carrouselData[0].description}/>
-        <Collapse type='Equipements' list={carrouselData[0].equipments}/>
+        <div className='apropos-collapse'>
+          <div className='apropos-collapse-title' >
+              <Collapse type='Description' text={carrouselData[0].description}/>
+          </div>
+          <div className='apropos-collapse-title' >
+              <Collapse type='Equipements' list={carrouselData[0].equipments}/>
+          </div>
+        </div>
     </div>
   )
 }

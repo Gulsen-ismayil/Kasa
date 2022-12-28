@@ -28,6 +28,7 @@
   font-size: 13px;
   color: #FF6060;
   padding: 15px 15px;
+  height: 12vh;
 }
 
 .equipement {
@@ -35,6 +36,7 @@
   color: #FF6060;
   font-size: 14px;
   padding: 0px 15px 15px;
+  height: 12vh;
 }
 
 @media only screen and ( max-width:768px) {

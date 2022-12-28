@@ -3,7 +3,7 @@ p {
 }
 
 .apropos {
-  margin: 20px 20px 180px;
+  margin: 20px 20px auto;
 }
 
 .aproposCollapse {

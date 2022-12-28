@@ -4,9 +4,8 @@ import './Collapse.css'
 import { useState } from 'react'
 
 function Collapse({type,text,list}){
-  console.log(list);
-  console.log(text);
   const [isClose, setIsClose] = useState(true)
+
   return isClose ? (
     <div className='collapseCard' id={type} >
         <div className="collapseTitle" onClick={() => setIsClose(false)} >

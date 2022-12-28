@@ -5,6 +5,10 @@
   margin: auto;
 }
 
+.apropos-info{
+  margin: 0 0 auto;
+}
+
 .name-title-location {
   color: #FF6060;
   display: flex;
@@ -28,4 +32,13 @@
   height: 40px;
   width: 40px;
   border-radius: 50%;
+}
+
+.apropos-collapse{
+  display: flex;
+  justify-content: space-between;
+}
+
+.apropos-collapse-title{
+  width: 50%;
 }
