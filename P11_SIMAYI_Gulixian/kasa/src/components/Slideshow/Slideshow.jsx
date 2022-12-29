@@ -20,7 +20,7 @@ const goToNext = () => {
   setCurrentIndex(newIndex)
 }
 
-  return  (
+  return  carrouselPicture[0].length > 1 ?(
         <div className='carrouselBloc'>
             <img className='carrouselImage' src={carrouselPicture[0][currentIndex]} alt="pic" />
             <div className='carrouselIcon' >
@@ -29,9 +29,15 @@ const goToNext = () => {
                                   onClick={() => goToPrev()}/>
                 <FontAwesomeIcon className='chevronRight' 
                                   icon={faChevronRight} 
-                                  onClick={() => goToNext()}/>            
+                                  onClick={() => goToNext()}/>          
             </div>
+            <p className='carrouselNumber' >{currentIndex+1}/{carrouselPicture[0].length}</p>
         </div>
+   ) : (
+    <div className='carrouselBloc'>
+    <img className='carrouselImage' src={carrouselPicture[0][currentIndex]} alt="pic" />
+    <p className='carrouselNumber' >{currentIndex+1}/{carrouselPicture[0].length}</p>
+</div>
    )
 }
 

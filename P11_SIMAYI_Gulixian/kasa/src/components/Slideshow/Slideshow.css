@@ -29,3 +29,12 @@
 .chevronLeft{
   left: 3%;
 }
+
+.carrouselNumber{
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  color: white;
+  font-size: 14px;
+  text-shadow: 1px 1px 1px rgb(96, 95, 95);
+}

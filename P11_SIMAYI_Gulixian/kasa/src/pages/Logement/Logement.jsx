@@ -4,15 +4,17 @@ import Collapse from '../../components/Collapse/Collapse'
 import Rating from '../../components/Rating/Rating'
 import Slideshow from '../../components/Slideshow/Slideshow'
 import Tag from '../../components/Tag/Tag'
+import Error from'../Page404/Error'
+
 import './Logement.css'
 
 function Logement(){
   const {id} = useParams()
   const logementData = data.filter((element) => 
                             id === element.id ?
-                            element.pictures : null)
+                            element : null)
 
-  return (
+  return logementData != null ? (
     <div className='apropos-container'>
         <div className='slideshow' >
             <Slideshow logementData={logementData}/>
@@ -43,7 +45,7 @@ function Logement(){
               </div>
         </div>
     </div>
-  )
+  ): <Error />
 }
 
 export default Logement
