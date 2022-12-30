@@ -14,7 +14,7 @@ function Logement(){
                             id === element.id ?
                             element : null)
 
-  return logementData != null ? (
+  return logementData.length !== 0 ? (
     <div className='apropos-container'>
         <div className='slideshow' >
             <Slideshow logementData={logementData}/>

@@ -8,6 +8,10 @@ body,html {
   padding: 20px 100px;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 /* Header */
 .header {
   display: flex;
