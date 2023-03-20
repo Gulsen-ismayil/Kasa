@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/user/12")
+      .get("http://localhost:3000/user/18")
       .then((response) => setUser(response.data))
       .then((error) => console.log(error));
   }, []);
